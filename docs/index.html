@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta name="google-site-verification" content="ftFOlJETX-2KNjaPh8W6s8lhigItRuu9fOmjHZZ0nY0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <title>HuLA</title>
+
+  <style type="text/css">
+    table {
+      width: 100%;
+      table-layout: fixed;
+    }
+
+    body,
+    p,
+    div,
+    figcaption {
+      font-size: 1rem;
+      color: #000000;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      text-align: center;
+      font-weight: bold;
+      position: relative;
+      padding: 5px 10px;
+    }
+
+    .section-title::after {
+      content: "";
+      display: block;
+      width: 100%;
+      border-bottom: 2px solid black;
+      margin-top: 5px;
+    }
+
+    audio {
+      width: 100%;
+    }
+
+    .table th,
+    .table td {
+      border-left: none !important;
+      border-right: none !important;
+    }
+
+    .table {
+      border: none;
+    }
+
+    thead>tr>th:first-child {
+      width: 200px;
+    }
+
+    @media (max-width: 767px) {
+      .big-screen {
+        display: none;
+      }
+    }
+
+    @media (min-width: 767px) {
+      .small-screen {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="jumbotron bg-dark text-center">
+      <div class="container">
+        <h1 class="text-light">HuLA: Prosody-Aware Anti-Spoofing with Multi-task Learning for
+          Expressive and Emotional Speech
+        </h1>
+        <p style="font-size: 1rem; color: lightgray; font-style: italic;">
+          (This work is accepted to Interspeech 2025)
+        </p>
+        <p style="font-size: 1.25rem; color:#FFFFFF;">
+          Aurosweta Mahapatra<sup>1</sup>, Ismail Rasim Ulgen<sup>1</sup>, Berrak Sisman<sup>1,3</sup>
+          <br>
+          <span style="font-size:1rem;">amahapa2@jhu.edu &nbsp; iulgen1@jhu.edu &nbsp; sisman@jhu.edu</span>
+        </p>
+        <p style="font-size: 1rem; color:#FFFFFF;">
+          <sup>1</sup> Electrical and Computer Engineering Department, Johns Hopkins University, USA
+        </p>
+
+        <p style="font-size: 1.2rem; color: #FFFFFF; font-weight: bold;">
+          GitHub Link:
+          <a href="https://github.com/aurosweta-jm18/HuLA" target="_blank" style="color:#B0E0E6;">
+            https://github.com/aurosweta-jm18/HuLA
+          </a>
+        </p>
+        <p style="font-size: 1.2rem; color: #FFFFFF; font-weight: bold;">
+          Paper Link:
+          <a href="#" target="_blank" style="color:#B0E0E6;">
+            Link will be available soon!
+          </a>
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="row" id="result">
+        <div class="col-md-12">
+          <figcaption style="text-align: justify; font-size: 1rem; color: #000000;">
+            <b>Abstract</b>: Current anti-spoofing systems remain vulnerable to expressive and emotional synthetic
+            speech, since they rarely leverage prosody as a discriminative cue. Prosody is central to human
+            expressiveness and emotion, and humans instinctively use prosodic cues such as <i>F<sub>0</sub></i> contours
+            and voiced/unvoiced structure to distinguish natural from synthetic speech. In this paper, we propose
+            <i>HuLA</i>, a two-stage prosody-aware multi-task learning framework for spoof detection. In Stage 1, a
+            self-supervised learning (SSL) backbone is trained on real speech with auxiliary tasks of
+            <i>F<sub>0</sub></i> prediction and voiced/unvoiced classification, enhancing its ability to capture natural
+            prosodic variation. In Stage 2, the model is jointly optimized for spoof detection and prosody tasks on both
+            real and synthetic data, leveraging prosodic awareness to detect mismatches between natural and expressive
+            synthetic speech. Experiments show that HuLA consistently outperforms strong baselines on challenging
+            out-of-domain datasets, including expressive, emotional, and cross-lingual attacks.
+            <br /><br />
+            <h2 class="section-title">Proposed Framework</h2>
+            <img src="./Diagram.png" height="350" alt="Overview of Proposed Idea"
+              style="display: block; margin: 0 auto;" />
+            <p style="text-align: center; font-size: 1rem; color: #000000;">
+              Figure: Stage 1 models the natural prosodic variation of real speech, while Stage 2 discriminates between
+              real and synthetic expressive speech.
+            </p>
+          </figcaption>
+
+		<h2 class="section-title">Datasets Used for Evaluation</h2>
+		<ul>
+		  <li><a href="https://www.asvspoof.org/index2019.html" target="_blank">ASVspoof 2019</a></li>
+		  <li><a href="https://www.asvspoof.org/index2021.html" target="_blank">ASVspoof 2021</a></li>
+		  <li><a href="https://arxiv.org/abs/2408.08739" target="_blank">ASVspoof 2024</a></li>
+		  <li><a href="https://link.springer.com/chapter/10.1007/978-981-97-9345-4_19" target="_blank">EmoFake</a></li>
+		  <li><a href="https://ieeexplore.ieee.org/document/9814691" target="_blank">Mixed Emotions</a></li>
+		  <li><a href="https://www.isca-archive.org/interspeech_2023/florez23_interspeech.html" target="_blank">HABLA</a></li>
+		  <li><a href="https://arxiv.org/abs/2202.08433" target="_blank">ADD 2022</a></li>
+		</ul>
+
+
+          <h3>References</h3>
+          <ol>
+            <li>Wang, Xin, et al. "ASVspoof 2019: A large-scale public database of synthesized, converted and replayed
+              speech." <i>Computer Speech & Language</i> 64 (2020): 101114.</li>
+            <li>Liu, Xuechen, et al. "ASVspoof 2021: Towards spoofed and deepfake speech detection in the wild."
+              <i>IEEE/ACM Transactions on Audio, Speech, and Language Processing</i> 31 (2023): 2507-2522.</li>
+            <li>Wang, Xin, et al. "ASVspoof 5: Crowdsourced speech data, deepfakes, and adversarial attacks at scale."
+              <i>arXiv preprint</i> arXiv:2408.08739 (2024).</li>
+            <li>Zhao, Yan, et al. "Emofake: An initial dataset for emotion fake audio detection." <i>China National
+                Conference on Chinese Computational Linguistics</i>. Springer Nature Singapore, 2024.</li>
+            <li>Zhou, Kun, et al. "Speech synthesis with mixed emotions." <i>IEEE Transactions on Affective Computing</i>
+              14.4 (2022): 3120-3134.</li>
+            <li>Flórez, PA Tamayo, Rubén Manrique, and B. Pereira Nunes. "HABLA: A dataset of Latin American Spanish
+              accents for voice anti-spoofing." <i>Proc. Interspeech</i>. Vol. 2023.</li>
+            <li>Yi, Jiangyan, et al. "ADD 2022: the first audio deep synthesis detection challenge." <i>ICASSP 2022</i>.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-light mt-4 pt-3 pb-2">
+    <div class="container">
+      <p class="text-center mb-0">&copy; 2025 HuLA Project Page</p>
+    </div>
+  </footer>
+
+  <!-- JS Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
