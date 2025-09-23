@@ -26,21 +26,22 @@
       color: #000000;
     }
 
-    .section-title {
-      font-size: 1.8rem;
-      text-align: center;
-      font-weight: bold;
-      position: relative;
-      padding: 5px 10px;
-    }
-
-    .section-title::after {
-      content: "";
-      display: block;
-      width: 100%;
-      border-bottom: 2px solid black;
-      margin-top: 5px;
-    }
+	.section-title {
+	  font-size: 1.8rem;
+	  text-align: center;
+	  font-weight: bold;
+	  position: relative;
+	  padding: 5px 10px;
+	  color: navy;   /* make text navy blue */
+	}
+	
+	.section-title::after {
+	  content: "";
+	  display: block;
+	  width: 100%;
+	  border-bottom: 2px solid navy; /* underline also navy */
+	  margin-top: 5px;
+	}
 
     audio {
       width: 100%;
@@ -85,7 +86,7 @@
           (This work is accepted to Interspeech 2025)
         </p>
         <p style="font-size: 1.25rem; color:#FFFFFF;">
-          Aurosweta Mahapatra<sup>1</sup>, Ismail Rasim Ulgen<sup>1</sup>, Berrak Sisman<sup>1,3</sup>
+          Aurosweta Mahapatra<sup>, Ismail Rasim Ulgen<sup>, Berrak Sisman<sup>
           <br>
           <span style="font-size:1rem;">amahapa2@jhu.edu &nbsp; iulgen1@jhu.edu &nbsp; sisman@jhu.edu</span>
         </p>
@@ -125,7 +126,7 @@
             synthetic speech. Experiments show that HuLA consistently outperforms strong baselines on challenging
             out-of-domain datasets, including expressive, emotional, and cross-lingual attacks.
             <br /><br />
-            <h2 class="section-title">Proposed Framework</h2>
+            <h2 class="section-title">Proposed Training Strategy</h2>
             <img src="./HuLA_ataglance.png" height="350" alt="Overview of Proposed Idea"
               style="display: block; margin: 0 auto;" />
             <p style="text-align: center; font-size: 1rem; color: #000000;">
