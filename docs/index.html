@@ -166,7 +166,7 @@
 			
 			<!-- Inference figure -->
 			<figure style="text-align: center; margin-top: 30px;">
-			  <img src="./HuLA_inf.png" height="200" alt="Inference phase of HuLA" />
+			  <img src="./HuLA_inf.png" height="250" alt="Inference phase of HuLA" />
 			  <figcaption style="font-size: 1rem; color: #000000; margin-top: 8px;">
 			    Figure: Inference phase of HuLA.
 			  </figcaption>
@@ -184,6 +184,36 @@
 		  <li><a href="https://zenodo.org/records/7370805" target="_blank">HABLA</a></li>
 		  <li><a href="https://zenodo.org/records/10843991" target="_blank">ADD 2022</a></li>
 		</ul>
+			  
+		<h2 class="section-title">Results and Discussion</h2>
+		<!-- Tables displayed side by side -->
+		<div style="display: flex; justify-content: center; align-items: flex-start; gap: 20px; flex-wrap: wrap; margin-bottom: 20px;">
+		  <figure style="margin: 0; text-align: center;">
+		    <img src="./table_asvspoof.png" alt="ASVspoof Results" style="width: 350px; max-width: 100%; height: auto;" />
+		    <figcaption style="font-size: 0.9rem; margin-top: 8px;">ASVspoof Results</figcaption>
+		  </figure>
+		
+		  <figure style="margin: 0; text-align: center;">
+		    <img src="./table_emotional.png" alt="Emotional Datasets Results" style="width: 350px; max-width: 100%; height: auto;" />
+		    <figcaption style="font-size: 0.9rem; margin-top: 8px;">Emotional Datasets Results</figcaption>
+		  </figure>
+		
+		  <figure style="margin: 0; text-align: center;">
+		    <img src="./table_nonenglish.png" alt="Non-English Datasets Results" style="width: 350px; max-width: 100%; height: auto;" />
+		    <figcaption style="font-size: 0.9rem; margin-top: 8px;">Non-English Datasets Results</figcaption>
+		  </figure>
+		</div>
+		
+		<!-- Explanatory write-up -->
+		<p style="font-size: 1rem; line-height: 1.6; text-align: justify; max-width: 900px; margin: 0 auto;">
+		  Our experiments demonstrate the effectiveness of HuLA, a two-stage MTL framework that improves spoof detection
+		  through explicit prosody modeling. Although trained only on ASVspoof 2019, which lacks the diversity and realism of
+		  recent attacks, HuLA generalizes well across datasets that differ substantially from the training domain. Several of these
+		  sets include expressive and emotional synthetic speech, which typically fool state-of-the-art baselines. HuLA benefits
+		  from prosody-aware training, which equips the model to detect mismatches in expressiveness that are not dataset-dependent.
+		  This aligns with our design principle of listening like a human: just as listeners use prosodic cues to judge naturalness,
+		  HuLA leverages prosodic variation in both real and spoofed speech to capture subtle differences in expressiveness.
+		</p>
 
 
           <h3 style="color:#001f3f;">References</h3>
