@@ -99,12 +99,12 @@
 		
 		<p style="font-size: 1.2rem; color: #FFFFFF; font-weight: bold;">
 		  <a href="https://github.com/aurosweta-jm18/HuLA" target="_blank" style="color:#B0E0E6;">
-		    GitHub Link
+		    Codes and Pre-trained Models (Coming Soon)
 		  </a>
 		</p>
 		<p style="font-size: 1.2rem; color: #FFFFFF; font-weight: bold;">
-		  <a href="#" target="_blank" style="color:#B0E0E6;">
-		    Paper Link (coming soon)
+		  <a href="https://www.arxiv.org/abs/2509.21676" target="_blank" style="color:#B0E0E6;">
+		    Paper Link
 		  </a>
 		</p>
 
@@ -128,15 +128,44 @@
             real and synthetic data, leveraging prosodic awareness to detect mismatches between natural and expressive
             synthetic speech. Experiments show that HuLA consistently outperforms strong baselines on challenging
             out-of-domain datasets, including expressive, emotional, and cross-lingual attacks.
-            <br /><br />
-            <h2 class="section-title">Proposed Training Strategy</h2>
-            <img src="./HuLA_proposed_startergy.png" height="350" alt="Overview of Proposed Idea"
-              style="display: block; margin: 0 auto;" />
-            <p style="text-align: center; font-size: 1rem; color: #000000;">
-              Figure: Stage 1 models the natural prosodic variation of real speech, while Stage 2 discriminates between
-              real and synthetic expressive speech.
-            </p>
-          </figcaption>
+			<br /><br />
+			<h2 class="section-title">Proposed Idea: Listen Like a Human</h2>
+			<p>
+			  Our goal was to design a model to listen like a human by understanding the
+			  prosodic variation from real speech and use that knowledge to build up
+			  understanding about prosodic variation in real and fake speech while also
+			  capturing other spoof-relevant cues.
+			</p>
+			
+			<img src="./HuLA_proposed_startergy.png" height="350" alt="Overview of Proposed Idea"
+			  style="display: block; margin: 0 auto;" />
+			
+			<p style="text-align: center; font-size: 1rem; color: #000000;">
+			  Figure: Stage 1 models the natural prosodic variation of real speech, while
+			  Stage 2 discriminates between real and synthetic expressive speech.
+			</p>
+			
+			<h2 class="section-title">HuLA</h2>
+			
+			<img src="./HuLA_MTL1.png" height="350" alt="Training phase of HuLA"
+			  style="display: block; margin: 0 auto; margin-bottom: 20px;" />
+			
+			<img src="./HuLA_MTL2.png" height="350" alt="Training phase continuation of HuLA"
+			  style="display: block; margin: 0 auto; margin-bottom: 20px;" />
+			
+			<p style="text-align: center; font-size: 1rem; color: #000000;">
+			  Figure: Training phase of HuLA, the proposed prosody-aware multi-task
+			  learning method for anti-spoofing. Blue blocks indicate initialization
+			  from pretrained models, while pink blocks represent training from scratch.
+			</p>
+			
+			<img src="./HuLA_inf.png" height="350" alt="Inference phase of HuLA"
+			  style="display: block; margin: 0 auto;" />
+			
+			<p style="text-align: center; font-size: 1rem; color: #000000;">
+			  Figure: Inference phase of HuLA.
+			</p>
+
 
 		<h2 class="section-title">Datasets Used for Evaluation</h2>
 		<ul>
