@@ -147,24 +147,37 @@
 			
 			<h2 class="section-title">HuLA</h2>
 			
-			<img src="./HuLA_MTL1.png" height="350" alt="Training phase of HuLA"
-			  style="display: block; margin: 0 auto; margin-bottom: 20px;" />
+			<!-- Side by side training phase figures -->
+			<div style="display: flex; justify-content: center; align-items: flex-start; gap: 20px; margin-bottom: 20px; flex-wrap: wrap;">
+			  <figure style="text-align: center; margin: 0;">
+			    <img src="./HuLA_MTL1.png" height="350" alt="Training phase of HuLA" />
+			    <figcaption style="font-size: 0.9rem; color: #000000; margin-top: 8px;">
+			      Stage 1: Prosody modeling with pre-trained XLS-R.
+			    </figcaption>
+			  </figure>
 			
-			<img src="./HuLA_MTL2.png" height="350" alt="Training phase continuation of HuLA"
-			  style="display: block; margin: 0 auto; margin-bottom: 20px;" />
+			  <figure style="text-align: center; margin: 0;">
+			    <img src="./HuLA_MTL2.png" height="350" alt="Training phase continuation of HuLA" />
+			    <figcaption style="font-size: 0.9rem; color: #000000; margin-top: 8px;">
+			      Stage 2: Discrimination between real and synthetic expressive speech.
+			    </figcaption>
+			  </figure>
+			</div>
 			
-			<p style="text-align: center; font-size: 1rem; color: #000000;">
-			  Figure: Training phase of HuLA, the proposed prosody-aware multi-task
-			  learning method for anti-spoofing. Blue blocks indicate initialization
-			  from pretrained models, while pink blocks represent training from scratch.
+			<!-- Combined caption -->
+			<p style="text-align: center; font-size: 1rem; color: #000000; margin-top: -10px;">
+			  Figure: Training phase of HuLA, the proposed prosody-aware multi-task learning method for anti-spoofing.
+			  Blue blocks indicate initialization from pretrained models, while pink blocks represent training from scratch.
 			</p>
 			
-			<img src="./HuLA_inf.png" height="350" alt="Inference phase of HuLA"
-			  style="display: block; margin: 0 auto;" />
-			
-			<p style="text-align: center; font-size: 1rem; color: #000000;">
-			  Figure: Inference phase of HuLA.
-			</p>
+			<!-- Inference figure -->
+			<figure style="text-align: center; margin-top: 30px;">
+			  <img src="./HuLA_inf.png" height="350" alt="Inference phase of HuLA" />
+			  <figcaption style="font-size: 1rem; color: #000000; margin-top: 8px;">
+			    Figure: Inference phase of HuLA.
+			  </figcaption>
+			</figure>
+
 
 
 		<h2 class="section-title">Datasets Used for Evaluation</h2>
