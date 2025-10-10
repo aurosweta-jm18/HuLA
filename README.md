@@ -7,7 +7,7 @@ Codes will be available shortly.
 ## Pre-trained Models
 
 **Link to pre-trained models:**  
-[Models](https://drive.google.com/drive/folders/13I6dSEvkMtAOJP9qqBMiS0aCd1SdblAJ?usp=drive_link)
+[Pre-tranied Models](https://drive.google.com/drive/folders/13I6dSEvkMtAOJP9qqBMiS0aCd1SdblAJ?usp=drive_link)
 
 We have uploaded all the three models:
 
