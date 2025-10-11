@@ -1,9 +1,11 @@
 # HuLA: Prosody-Aware Anti-Spoofing with Multi-task Learning for Expressive and Emotional Speech
+Aurosweta Mahapatra Student Member, IEEE, Ismail Rasim Ulgen Student Member, IEEE, Berrak Sisman Senior Member, IEEE
+Submitted to IEEE Transactions on Affective Computing
 [Paper Link](https://www.arxiv.org/abs/2509.21676)
 
 Codes will be available shortly.
 
----
+--
 
 ## Pre-trained Models
 
