@@ -15,4 +15,4 @@ We have uploaded all the three models:
 2. **First stage Multi-task Learning on Real Data**  
 3. **HuLA: Full two stage MTL**
 
-We loaded the pretrained XLS-R model from Hugging Face for this work. [XLS-R:](https://huggingface.co/facebook/wav2vec2-xls-r-300m)
+We loaded the pretrained XLS-R model from Hugging Face for this work. ([XLS-R](https://huggingface.co/facebook/wav2vec2-xls-r-300m))
