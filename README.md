@@ -18,6 +18,6 @@ We have uploaded all the three models:
 
 We loaded the pretrained XLS-R model from Hugging Face for this work. ([XLS-R](https://huggingface.co/facebook/wav2vec2-xls-r-300m))
 
-First-stage training data: [Librispeech](https://www.openslr.org/12)
+First-stage training data: [Librispeech](https://www.openslr.org/12);
 Second-stage training data: [ASVspoof-2019](https://datashare.ed.ac.uk/handle/10283/3336)
 (Please refer to the paper for more details)
