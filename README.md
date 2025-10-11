@@ -4,7 +4,7 @@ Aurosweta Mahapatra Student Member, IEEE, Ismail Rasim Ulgen Student Member, IEE
 Submitted to IEEE Transactions on Affective Computing
 [Paper Link](https://www.arxiv.org/abs/2509.21676)
 
-Codes will be available shortly.
+**_Codes will be available shortly._**
 
 ## Pre-trained Models
 
